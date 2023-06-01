@@ -1,0 +1,3 @@
+[submodule "declarative-smart-contracts"]
+	path = declarative-smart-contracts
+	url = git@github.com:taoluo/declarative-smart-contracts.git
