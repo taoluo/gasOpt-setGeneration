@@ -22,6 +22,17 @@ if __name__ == '__main__':
         for name in files:
             print('\n\n\n\n read csv file ' + name)
             print(os.path.join(root, name))
+
+            datalog_file = os.path.join("/Users/tao/Projects/datalog_graph/declarative-smart-contracts/benchmarks", name.split(".")[0] + '.dl')
+            public_relation_readonly = []
+            print(os.path.join("/Users/tao/Projects/datalog_graph/declarative-smart-contracts/benchmarks", name.split(".")[0] + '.dl'))
+            with open(datalog_file,'r') as dl:
+                for l in dl:
+                    if '.public' in l and (not 'recv_' in l):
+                        public_relation_readonly.append(l.split(' ')[1].split('(')[0])
+                        # print('public', public_relation_readonly[-1])
+            print('\n\npublic_relation_readonly')
+            pprint(public_relation_readonly)
             df = pd.read_csv(os.path.join(root, name),header=0)
 
 
@@ -92,7 +103,7 @@ if __name__ == '__main__':
             #
             # nx.draw(G, pos, with_labels=True, font_weight='normal')
             # plt.show()
-
+            direct_dependency_set_all = direct_dependency_set_all.union(set(public_relation_readonly))
 
             upstream_dag =  traceback_upstream_dag(direct_dependency_set_all, txn_head=txn_head_all,g=G)
             plot_graph(G)
@@ -111,9 +122,10 @@ if __name__ == '__main__':
 
             # break
 
-            json_object = json.dumps(list(minimal_all), indent=4)
-
-            with open("/Users/tao/Projects/datalog_graph/declarative-smart-contracts/minimal_materialize_set/" + name.split('.')[0]+'.json', "w") as outfile:
-                outfile.write(json_object)
+            # json_object = json.dumps(list(minimal_all), indent=4)
+            df = pd.DataFrame(minimal_all)
+            df.to_csv("/Users/tao/Projects/datalog_graph/declarative-smart-contracts/minimal_materialize_set/" + name.split('.')[0]+'.csv', index=False, header=False)
+            # with open("/Users/tao/Projects/datalog_graph/declarative-smart-contracts/minimal_materialize_set/" + name.split('.')[0]+'.json', "w") as outfile:
+            #     outfile.write(json_object)
 
 
