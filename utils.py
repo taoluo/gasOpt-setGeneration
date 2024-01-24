@@ -1,12 +1,17 @@
+# Copyright (C) 2023 Tao Luo <taoluo71@cis.upenn.edu>
+
 import networkx as nx
 import matplotlib.pyplot as plt
 from pprint import pprint
+
 # from main import node_label
 is_debug = True
-def node_label(n_id,G):
+
+
+def node_label(n_id, G):
     if is_debug:
 
-        if isinstance(n_id,str):
+        if isinstance(n_id, str):
             try:
                 return G.nodes[n_id]['label']
             except:
@@ -20,19 +25,20 @@ def node_label(n_id,G):
         return ['None from node_label()']
 
 
-
-def dprint(*args,**kwargs):
+def dprint(*args, **kwargs):
     if is_debug:
         print(*args, **kwargs)
+
 
 def plot_graph(g, node_label_mapping_g=None):
     # global pos
     pos = nx.nx_agraph.graphviz_layout(g, prog='neato')
-    nx.draw(g, pos, with_labels=True, font_weight='normal',  labels=node_label_mapping_g)
+    nx.draw(g, pos, with_labels=True, font_weight='normal', labels=node_label_mapping_g)
     plt.show()
 
+
 # start from direct dependency relation trace back to transaction headr
-def traceback_upstream_dag(direct_dependency_set_all,txn_head, g):
+def traceback_upstream_dag(direct_dependency_set_all, txn_head, g):
     # global g_upstream, pred
     g_upstream = nx.DiGraph()
     queue = list(direct_dependency_set_all)
