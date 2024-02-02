@@ -1,3 +1,5 @@
+# Copyright (C) 2023 Tao Luo <taoluo71@cis.upenn.edu>
+
 import networkx as nx
 from utils import dprint,node_label
 

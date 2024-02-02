@@ -1,3 +1,5 @@
+# Copyright (C) 2023 Tao Luo <taoluo71@cis.upenn.edu>
+
 import networkx as nx
 import matplotlib.pyplot as plt
 from pprint import pprint
