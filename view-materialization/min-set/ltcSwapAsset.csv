@@ -1,0 +1,8 @@
+totalBurn,allMint,allBurn,totalOut,oldOwner,totalBalances,allowanceTotal,totalIn,newOwner,totalMint,effectiveTime,spentTotal,,allowance,owner,totalSupply,balanceOf
+allMint,allBurn,allowance,totalOut,oldOwner,totalBalances,totalBurn,totalIn,newOwner,totalMint,effectiveTime,,owner,totalSupply,balanceOf
+allMint,balanceOf,newOwner,allBurn,oldOwner,allowanceTotal,totalBalances,effectiveTime,spentTotal,,allowance,owner,totalSupply
+allMint,balanceOf,newOwner,allBurn,allowance,oldOwner,totalBalances,effectiveTime,,owner,totalSupply
+totalSupply,allowance,totalOut,oldOwner,totalBalances,totalBurn,totalIn,newOwner,totalMint,effectiveTime,,owner,balanceOf
+totalSupply,balanceOf,newOwner,allowance,oldOwner,totalBalances,effectiveTime,,owner
+totalBurn,totalSupply,totalOut,oldOwner,totalBalances,allowanceTotal,totalIn,newOwner,totalMint,effectiveTime,spentTotal,,allowance,owner,balanceOf
+totalSupply,balanceOf,newOwner,oldOwner,allowanceTotal,totalBalances,effectiveTime,spentTotal,,allowance,owner

@@ -1,0 +1,17 @@
+#body,head,ruleId,isAgg,isTx
+release,released,0,true,false
+release,send,1,false,false
+beneficiary,send,1,false,false
+now,earlyRelease,2,false,false
+start,earlyRelease,2,false,false
+released,earlyRelease,2,false,false
+thisBalance,release,5,false,true
+now,release,5,false,true
+released,release,5,false,true
+start,release,5,false,true
+duration,release,5,false,true
+duration,release,7,false,true
+released,release,7,false,true
+start,release,7,false,true
+thisBalance,release,7,false,true
+now,release,7,false,true

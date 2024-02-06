@@ -1,0 +1,8 @@
+name,allMint,symbol,allBurn,decimals,totalOut,totalBalances,totalBurn,decreaseAllowanceTotal,totalIn,increaseAllowanceTotal,totalMint,controller,spentTotal,,allowance,totalSupply,balanceOf
+name,totalSupply,symbol,decimals,totalOut,totalBalances,totalBurn,decreaseAllowanceTotal,totalIn,increaseAllowanceTotal,totalMint,controller,spentTotal,,allowance,balanceOf
+increaseAllowanceTotal,name,totalSupply,balanceOf,controller,decimals,decreaseAllowanceTotal,totalBalances,symbol,spentTotal,,allowance
+name,totalSupply,balanceOf,controller,allowance,decimals,totalBalances,symbol,
+name,allMint,symbol,balanceOf,allBurn,decimals,totalBalances,decreaseAllowanceTotal,increaseAllowanceTotal,controller,spentTotal,,allowance,totalSupply
+name,allMint,balanceOf,controller,allBurn,allowance,decimals,totalBalances,symbol,,totalSupply
+name,totalSupply,symbol,allowance,decimals,totalOut,totalBurn,totalIn,totalBalances,totalMint,controller,,balanceOf
+name,allMint,symbol,allBurn,allowance,decimals,totalOut,totalBurn,totalIn,totalBalances,totalMint,controller,,totalSupply,balanceOf

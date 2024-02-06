@@ -1,0 +1,16 @@
+totalSupply,balanceOf,allowance,freezeSum,freezeOf,owner,totalBalances,
+totalUnfreeze,allMint,balanceOf,allBurn,allowance,freezeSum,totalFreeze,owner,totalBalances,,totalSupply,freezeOf
+allMint,balanceOf,allBurn,allowanceTotal,freezeOf,freezeSum,owner,totalBalances,spentTotal,,allowance,totalSupply
+totalUnfreeze,totalSupply,balanceOf,allowance,freezeSum,totalFreeze,owner,totalBalances,,freezeOf
+totalBurn,allMint,allBurn,totalOut,freezeSum,allowanceTotal,freezeOf,owner,totalBalances,totalMint,totalIn,spentTotal,,allowance,totalSupply,balanceOf
+totalBurn,totalUnfreeze,totalSupply,totalOut,freezeSum,allowanceTotal,totalFreeze,owner,totalBalances,totalMint,totalIn,spentTotal,,allowance,freezeOf,balanceOf
+totalBurn,allMint,allBurn,allowance,totalOut,freezeSum,freezeOf,owner,totalBalances,totalMint,totalIn,,totalSupply,balanceOf
+totalBurn,totalUnfreeze,allMint,allBurn,totalOut,freezeSum,allowanceTotal,totalFreeze,owner,totalBalances,totalMint,totalIn,spentTotal,,allowance,totalSupply,freezeOf,balanceOf
+totalUnfreeze,allMint,allBurn,allowance,totalOut,freezeSum,totalBurn,totalFreeze,owner,totalBalances,totalMint,totalIn,,totalSupply,freezeOf,balanceOf
+totalUnfreeze,totalSupply,balanceOf,allowanceTotal,freezeSum,totalFreeze,owner,totalBalances,spentTotal,,allowance,freezeOf
+totalBurn,totalSupply,totalOut,freezeSum,allowanceTotal,freezeOf,owner,totalBalances,totalMint,totalIn,spentTotal,,allowance,balanceOf
+totalUnfreeze,totalSupply,allowance,totalOut,freezeSum,totalBurn,totalFreeze,owner,totalBalances,totalMint,totalIn,,freezeOf,balanceOf
+allMint,balanceOf,allBurn,allowance,freezeOf,freezeSum,owner,totalBalances,,totalSupply
+totalSupply,balanceOf,allowanceTotal,freezeSum,freezeOf,owner,totalBalances,spentTotal,,allowance
+totalSupply,allowance,totalOut,freezeSum,freezeOf,totalBurn,owner,totalBalances,totalMint,totalIn,,balanceOf
+totalUnfreeze,allMint,balanceOf,allBurn,freezeSum,allowanceTotal,totalFreeze,owner,totalBalances,spentTotal,,allowance,totalSupply,freezeOf
